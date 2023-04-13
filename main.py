@@ -1,21 +1,21 @@
 def make_line(size):
   line = ""
   for column in range(size):
-    line = line + "* "
+    line = line + "0 "
   print(line)
 
 def make_square(size):
   for row in range(size):
     line = ""
     for column in range(size):
-      line = line + "* "
+      line = line + f"{row} "
     print(line)
 
 def make_triangle(size):
   for row in range(size):
     line = ""
     for column in range(row + 1):
-      line = line + "* "
+      line = line + f"{row} "
     print(line)
 
 print()
